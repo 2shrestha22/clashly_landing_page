@@ -8,6 +8,7 @@ class ClashColors {
   static const lightGreen800 = Color(0xFF558B2F);
   static const lightGreenShade = Color(0xFFDCEDC8);
   static const disabled = Colors.black38;
+  static const secondary = Color(0xFF893615);
 
   // http://mcg.mbitson.com
   static const MaterialColor clashpalette =

@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:clashly_landing_page/core/theme/clash_theme.dart';
+import 'package:clashly_landing_page/core/widgets/drop_shadow_image.dart';
 import 'package:clashly_landing_page/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +40,10 @@ class _LandingPageState extends State<LandingPage> {
                 const SizedBox(width: 10),
                 Text(
                   'ClashLy',
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline3
+                      ?.copyWith(color: ClashColors.secondary),
                 ),
               ],
             ),
@@ -58,19 +62,8 @@ class _LandingPageState extends State<LandingPage> {
                           ?.copyWith(color: const Color(0xFF2E7D32)),
                     ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      boxShadow: [
-                        BoxShadow(
-                          offset: Offset(2, 2),
-                          blurRadius: 10,
-                          color: ClashColors.lightGreenShade,
-                          spreadRadius: 5,
-                        )
-                      ],
-                    ),
-                    child: Image.asset(
+                  DropShadowImage(
+                    image: Image.asset(
                       Assets.images.flutter01.path,
                       height: 500,
                       isAntiAlias: true,
@@ -78,12 +71,8 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 30, 0, 0),
-                    child: PhysicalModel(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(6),
-                      elevation: 20,
-                      shadowColor: ClashColors.lightGreenShade,
-                      child: Image.asset(
+                    child: DropShadowImage(
+                      image: Image.asset(
                         Assets.images.flutter02.path,
                         height: 500,
                       ),
