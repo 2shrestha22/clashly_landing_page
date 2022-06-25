@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 ///
 ///Use [DropShadowedImage] widget with provided Image.
 class DropShadowImage extends StatelessWidget {
-  final Key? key;
-
   /// Represents the size of shadow that how big shadow the image will have.
   ///
   /// Default to 1.0 .
@@ -31,7 +29,7 @@ class DropShadowImage extends StatelessWidget {
   final Image image;
 
   const DropShadowImage({
-    this.key,
+    Key? key,
     this.blurRadius = 8.0,
     this.borderRadius = 0.0,
     this.scale = 1.0,

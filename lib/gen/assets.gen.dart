@@ -16,20 +16,40 @@ class $AssetsImagesGen {
   AssetGenImage get appIcon =>
       const AssetGenImage('assets/images/app_icon.png');
 
+  /// File path: assets/images/app_icon_100_100.png
+  AssetGenImage get appIcon100100 =>
+      const AssetGenImage('assets/images/app_icon_100_100.png');
+
+  /// File path: assets/images/flutter_01.jpg
+  AssetGenImage get flutter01Jpg =>
+      const AssetGenImage('assets/images/flutter_01.jpg');
+
   /// File path: assets/images/flutter_01.png
-  AssetGenImage get flutter01 =>
+  AssetGenImage get flutter01Png =>
       const AssetGenImage('assets/images/flutter_01.png');
 
+  /// File path: assets/images/flutter_02.jpg
+  AssetGenImage get flutter02Jpg =>
+      const AssetGenImage('assets/images/flutter_02.jpg');
+
   /// File path: assets/images/flutter_02.png
-  AssetGenImage get flutter02 =>
+  AssetGenImage get flutter02Png =>
       const AssetGenImage('assets/images/flutter_02.png');
 
+  /// File path: assets/images/flutter_03.jpg
+  AssetGenImage get flutter03Jpg =>
+      const AssetGenImage('assets/images/flutter_03.jpg');
+
   /// File path: assets/images/flutter_03.png
-  AssetGenImage get flutter03 =>
+  AssetGenImage get flutter03Png =>
       const AssetGenImage('assets/images/flutter_03.png');
 
+  /// File path: assets/images/flutter_04.jpg
+  AssetGenImage get flutter04Jpg =>
+      const AssetGenImage('assets/images/flutter_04.jpg');
+
   /// File path: assets/images/flutter_04.png
-  AssetGenImage get flutter04 =>
+  AssetGenImage get flutter04Png =>
       const AssetGenImage('assets/images/flutter_04.png');
 }
 
