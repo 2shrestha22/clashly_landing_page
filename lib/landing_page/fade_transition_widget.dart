@@ -18,10 +18,13 @@ class _FadeTransitionWidgetState extends State<FadeTransitionWidget>
     super.initState();
     controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 2),
-    )..forward();
+      duration: const Duration(seconds: 1),
+    );
 
     animation = Tween(begin: 0.0, end: 1.0).animate(controller);
+
+    Future.delayed(const Duration(seconds: 1))
+        .then((_) => controller.forward());
   }
 
   @override
