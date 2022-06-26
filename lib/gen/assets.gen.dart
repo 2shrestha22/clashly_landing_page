@@ -51,6 +51,14 @@ class $AssetsImagesGen {
   /// File path: assets/images/flutter_04.png
   AssetGenImage get flutter04Png =>
       const AssetGenImage('assets/images/flutter_04.png');
+
+  /// File path: assets/images/google_play_badge.png
+  AssetGenImage get googlePlayBadge =>
+      const AssetGenImage('assets/images/google_play_badge.png');
+
+  /// File path: assets/images/google_play_badge_400.png
+  AssetGenImage get googlePlayBadge400 =>
+      const AssetGenImage('assets/images/google_play_badge_400.png');
 }
 
 class Assets {
